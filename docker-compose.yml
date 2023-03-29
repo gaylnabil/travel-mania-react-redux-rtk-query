@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/react-destination-typescript
+    container_name: react-destination-typescript-c
+    image: react-destination-typescript-img
+    ports:
+      - 3000:3000
+    command: npm start
+    environment:
+      - WACTHPACK_POLLING=true

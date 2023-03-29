@@ -1,0 +1,18 @@
+body{
+    background-color: #000;
+}
+
+.data-list{
+    display: flex;
+    list-style: none;
+}
+
+.data-list > li {
+    margin: auto 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
